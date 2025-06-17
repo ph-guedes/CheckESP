@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+  postgres_checkesp:
+    build:
+      context: ./postgres
+    image: phguedes/postgres_checkesp:latest
+    container_name: postgres_checkesp
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: checkesp
+    networks:
+      - backend
+  checkesp-user-api:
+    build:
+      context: ../app
+      dockerfile: ../app/Dockerfile
+    image: phguedes/app:latest
+    container_name: checkesp-user-api
+    ports:
+      - "8081:8081"
+    environment:
+      POSTGRES_URL: jdbc:postgresql://postgres_checkesp:5432/checkesp
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DATABASE: checkesp
+    depends_on:
+      - postgres_checkesp
+    networks:
+      - backend
+networks:
+  backend:
+    driver: bridge

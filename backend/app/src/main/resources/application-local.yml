@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://postgres_checkesp:5432/checkesp
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver

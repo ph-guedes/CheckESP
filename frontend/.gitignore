@@ -1,0 +1,55 @@
+# Node.js
+node_modules/
+public/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diretórios de build
+dist/
+build/
+
+# Arquivos de ambiente (NUNCA subir)
+.env
+.env.local
+.env.*.local
+
+# VSCode
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache do Vite
+.vite/
+
+# Cache do Next.js (se usar futuramente)
+.next/
+
+# Cache do React
+.cache/
+*.cache/
+
+# Coverage (testes)
+coverage/
+
+# Relatórios temporários
+*.tgz
+
+# Outros arquivos do sistema
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Arquivos de lock opcionais (se não quiser versionar)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
