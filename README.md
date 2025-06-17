@@ -31,3 +31,10 @@ Digitalizar processos de checklist em ambientes industriais, oferecendo:
 - 🚀 Coleta rápida de dados via dispositivos IoT.
 - 📊 Visualização em tempo real de checklists.
 - ✅ Histórico, relatórios e gestão de usuários, operadores e equipamentos.
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+Pedro Guedes  
+🚀 Projeto acadêmico de Análise e Desenvolvimento de Sistemas  
